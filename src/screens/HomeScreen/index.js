@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +12,10 @@ const styles = StyleSheet.create({
 
 const HomeScreen = () => (
   <View style={styles.container}>
-    <Text>Hello from the Home Screen!</Text>
+    <Text>Welcome to Gotcha!</Text>
+    <Text>We will get you playing in a moment.</Text>
+    <Text>In order to get the arenas, we need to ask for your location so we can find one nearby.</Text>
+    <Button onPress={() => console.log("YOU PRESSED THE BUTTON!!!")} title="Find Nearby Arenas" />
   </View>
 );
 
