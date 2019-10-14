@@ -10,12 +10,8 @@ const styles = StyleSheet.create({
   },
 });
 
-const ArenaListScreen = (props) => {
-  const { navigation } = props;
-
-  const location = navigation.getParam("location");
-  const latitude = location.latitude;
-  const longitude = location.longitude;
+const ArenaListScreen = ({ navigation }) => {
+  const { longitude, latitude } = navigation.getParam("location");
 
   return (
     <View style={styles.container}>
