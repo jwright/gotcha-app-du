@@ -34,7 +34,7 @@ class HomeScreen extends React.Component {
 
     const location = await HomeScreen.getLocation();
 
-    navigation.navigate("ArenaList", { location: location });
+    navigation.navigate("ArenaList", { location });
   };
 
   async componentDidMount() {
